@@ -1,0 +1,16 @@
+<html>
+    <head>
+        
+    </head>
+    <center>
+        <form action = "/flight/editimage" method="post" enctype="multipart/form-data">
+            <input type="hidden" value="<%=data.flightid%>" name="flightid">
+            <h3><%=data.flightname%></h3>
+            <h3><%=data.company%></h3>
+            <img src="/images/<%=data.logo%>" width="250"><br>
+            <b>Upload new image:</b>
+            <input type="file" class="btn btn-outline-primary" required name="logo"><br><br>
+            <input class = "sub" type="submit" value="Upload New Image">
+        </form>
+    </center>
+</html>
